@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  IMAGE_NAME: your-dockerhub-username/babygenai
+  IMAGE_NAME: juanfernandez/babygenai
 
 jobs:
   build-scan-push:
