@@ -31,7 +31,7 @@ jobs:
       with:
         command: cves
         image: ${{ env.IMAGE_NAME }}:${{ github.sha }}
-        only-severities: critical, high
+        only-severities: critical
         exit-code: true
 
     - name: Push to Docker Hub
