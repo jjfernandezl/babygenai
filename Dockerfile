@@ -13,4 +13,8 @@ COPY .env .
 # Set environment variable for container
 ENV DMR_BASE_URL=http://model-runner.docker.internal
 
+# Use a non-root user for better security
+RUN useradd --no-log-init -r -m appuser
+USER appuser
+
 CMD ["python", "src/main.py"]
