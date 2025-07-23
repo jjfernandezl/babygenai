@@ -1,0 +1,40 @@
+# Ignore environment files
+.env
+
+# Ignore Python dependencies
+*.pyc
+__pycache__/
+
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yml
+
+# Ignore Python requirements
+requirements.txt
+
+# Ignore source code directory
+src/
+
+# Ignore Git metadata
+.git/
+
+# Ignore IDE-specific files
+*.vscode/
+.idea/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+
+# Ignore compiled files
+*.o
+*.so
+*.out
+
+# Ignore system files
+.DS_Store
+Thumbs.db
