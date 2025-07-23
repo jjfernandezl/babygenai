@@ -12,7 +12,7 @@ from litellm import completion
         },
         {
             "role": "user", 
-            "content": "Who are you my dear?"
+            "content": "Who are you?"
         }
     ]
 )
