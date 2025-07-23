@@ -8,13 +8,12 @@ RUN pip install -r requirements.txt
 
 # Copy source code
 COPY src/ ./src/
-COPY .env .
+RUN chown -R appuser:appuser /app
 
 # Set environment variable for container
 ENV DMR_BASE_URL=http://model-runner.docker.internal
 
-# Use a non-root user for better security
-RUN useradd --no-log-init -r -m appuser
+# Switch to non-root user
 USER appuser
 
 CMD ["python", "src/main.py"]
