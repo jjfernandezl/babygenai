@@ -24,7 +24,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build --platform linux/arm64 -t ${{ env.IMAGE_NAME }}:${{ github.sha }} .
+        docker build --platform linux/amd64 -t ${{ env.IMAGE_NAME }}:${{ github.sha }} .
 
     - name: Security scan with Docker Scout
       uses: docker/scout-action@v1
