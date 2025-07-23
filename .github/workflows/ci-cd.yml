@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  IMAGE_NAME: juanfernandez/babygenai
+  IMAGE_NAME: juanfernandez250/babygenai
 
 jobs:
   build-scan-push:
