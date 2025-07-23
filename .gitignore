@@ -5,15 +5,6 @@
 *.pyc
 __pycache__/
 
-# Ignore Docker-related files
-Dockerfile
-docker-compose.yml
-
-# Ignore Python requirements
-requirements.txt
-
-# Ignore source code directory
-src/
 
 # Ignore Git metadata
 .git/
